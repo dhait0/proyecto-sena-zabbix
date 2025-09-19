@@ -36,17 +36,17 @@ type Foto = { src: string; alt: string };
   // ⚠️ Ahora las fotos son locales (carpeta /public/media/analisis/)
   const fotosLugar: Foto[] = useMemo(
     () => [
-      { src: "/media/analisis/evidencia1.jpg", alt: "Evidencia 1" },
-      { src: "/media/analisis/evidencia2.jpg", alt: "Evidencia 2" },
-      { src: "/media/analisis/evidencia3.jpg", alt: "Evidencia 3" },
+      { src: "/media/analisis/Server-f1.jpeg", alt: "Server fisico" },
+      { src: "/media/analisis/Server-f2.jpeg", alt: "Server fisico" },
+      { src: "/media/analisis/Server-f3.jpeg", alt: "Server fisico" }
     ],
     []
   );
   const fotosAvancePlaneacion: Foto[] = useMemo(
     () => [
-      { src: "/media/planeacion/avance1.jpg", alt: "Avance 1" },
-      { src: "/media/planeacion/avance2.jpg", alt: "Avance 2" },
-      { src: "/media/planeacion/avance3.jpg", alt: "Avance 3" },
+      { src: "/media/planeacion/serverweb.jpeg", alt: "Server web zabbix" },
+      { src: "/media/planeacion/terminal.jpeg", alt: "Server Terminal zabbix" },
+      { src: "/media/planeacion/serverwebequip.jpeg", alt: "Server web equipos" },
     ],
     []
   );
@@ -336,12 +336,12 @@ Capacitación básica al personal encargado sobre el uso de Zabbix, interpretaci
 function FasePlaneacion({ webgrafia, fotosAvance }: { webgrafia: WebItem[]; fotosAvance: Foto[] }) {
   return (
     <Section title="Fase Planeación">
-      <Card title="2.1 Tabla de cotizaciones (usar formato anexo)">
-        <PdfPreview src="/media/analisis/formato_AC.pdf" height={520} title="Resumen del proyecto – PDF" downloadName="ResumenProyecto.pdf" />
+      <Card title="2.1 Tabla de cotizaciones">
+        <PdfPreview src="/media/analisis/cotizaciones.pdf" height={520} title="tabla de cotizaciones.pdf" downloadName="Tabla de cotizaciones.pdf" />
       </Card>
 
-      <Card title="2.2 Cronograma de actividades (formato anexo + Microsoft To Do)">
-        <PdfPreview src="/media/analisis/formato_AC.pdf" height={520} title="Resumen del proyecto – PDF" downloadName="ResumenProyecto.pdf" />
+      <Card title="2.2 Cronograma de actividades">
+        <PdfPreview src="/media/planeacion/Cronograma.pdf" height={520} title="Cronograma de actividades.pdf" downloadName="Cronograma de actividades.pdf" />
       </Card>
 
       <Card title="2.3 Evidencias – Primer avance de implementación">
