@@ -53,7 +53,8 @@ type Foto = { src: string; alt: string };
   // Links tipo "píldoras" en el HERO (carpetas con todos los archivos)
   const heroLinks: WebItem[] = useMemo(
     () => [
-      { label: "Carpeta Drive general", url: "https://example.com/carpeta-general" }
+      { label: "Carpeta Drive general", url: "https://drive.google.com/drive/folders/1SlzNIQRXi93N_Izx2rUmKrtekDkwat0d?usp=drive_link" },
+      { label: "proyecto en git hub", url: "https://github.com/dhait0/proyecto-sena-zabbix" }
     ],
     []
   );
