@@ -337,7 +337,7 @@ function FasePlaneacion({ webgrafia, fotosAvance }: { webgrafia: WebItem[]; foto
   return (
     <Section title="Fase Planeación">
       <Card title="2.1 Tabla de cotizaciones">
-        <PdfPreview src="/media/analisis/cotizaciones.pdf" height={520} title="tabla de cotizaciones.pdf" downloadName="Tabla de cotizaciones.pdf" />
+        <PdfPreview src="/media/planeacion/cotizaciones.pdf" height={520} title="tabla de cotizaciones.pdf" downloadName="Tabla de cotizaciones.pdf" />
       </Card>
 
       <Card title="2.2 Cronograma de actividades">
